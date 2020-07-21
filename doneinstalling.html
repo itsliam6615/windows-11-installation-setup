@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/98.css">
+<style>body{background-color:#01817F}</style>
+<meta http-equiv="Refresh" content="30; url='https://itsliam6615.github.io/windows-11-installation-setup/restart.html'" />
+</head>
+<body>
+<div class="window" style="width: 100%">
+<div class="title-bar">
+<div class="title-bar-text">Windows 11 Developers Preview (only available to select users)</div>
+<div class="title-bar-controls">
+<button aria-label="Close"></button>
+</div>
+</div>
+<div class="window-body">
+<img src="https://www.sysprobs.com/wp-content/uploads/2020/01/Windows-11-logo.jpg" alt="Windows 11" width="20%">
+<h4>Succesful</h4>
+<p>Windows will restart automatically in <span id="countdown">30</span> seconds.</p>
+<script>
+var seconds = document.getElementById("countdown").textContent;var countdown = setInterval(function() {seconds--;document.getElementById("countdown").textContent = seconds;if (seconds <= 0) clearInterval(countdown);}, 1000);
+</script>
+<button onclick="window.location.href='restart.html'">Restart Now</button>
+</div>
+</div>
+</body>
+</head>
